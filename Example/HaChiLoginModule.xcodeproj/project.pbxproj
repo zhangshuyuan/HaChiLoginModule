@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F68F87203E54D33BD115582 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		4D3B91ADD20EE984E2B04571 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1F68F87203E54D33BD115582 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4D3B91ADD20EE984E2B04571 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5F40CE982E3DF91D09BF3F43 /* Pods-HaChiLoginModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaChiLoginModule_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaChiLoginModule_Example/Pods-HaChiLoginModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5FF27F1F67969CC928E3A48C /* Pods_HaChiLoginModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaChiLoginModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* HaChiLoginModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HaChiLoginModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +63,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8560DB7E7158DF5B99AE54D5 /* Pods-HaChiLoginModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaChiLoginModule_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaChiLoginModule_Tests/Pods-HaChiLoginModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A7150A57C8E47A696D1D79D4 /* HaChiLoginModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HaChiLoginModule.podspec; path = ../HaChiLoginModule.podspec; sourceTree = "<group>"; };
+		A7150A57C8E47A696D1D79D4 /* HaChiLoginModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HaChiLoginModule.podspec; path = ../HaChiLoginModule.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4340D19FD0F415A35C391E5 /* Pods-HaChiLoginModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaChiLoginModule_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HaChiLoginModule_Tests/Pods-HaChiLoginModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CBEBC4BE54061C673B0386B2 /* Pods_HaChiLoginModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HaChiLoginModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB88CA32E4BCE0EEA3C163AE /* Pods-HaChiLoginModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HaChiLoginModule_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HaChiLoginModule_Example/Pods-HaChiLoginModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "961048968@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						ProvisioningStyle = Manual;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -485,12 +488,15 @@
 			baseConfigurationReference = EB88CA32E4BCE0EEA3C163AE /* Pods-HaChiLoginModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HaChiLoginModule/HaChiLoginModule-Prefix.pch";
 				INFOPLIST_FILE = "HaChiLoginModule/HaChiLoginModule-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -500,12 +506,15 @@
 			baseConfigurationReference = 5F40CE982E3DF91D09BF3F43 /* Pods-HaChiLoginModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HaChiLoginModule/HaChiLoginModule-Prefix.pch";
 				INFOPLIST_FILE = "HaChiLoginModule/HaChiLoginModule-Info.plist";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -1,0 +1,16 @@
+PODS:
+  - HaChiLoginModule (0.1.0)
+
+DEPENDENCIES:
+  - HaChiLoginModule (from `../`)
+
+EXTERNAL SOURCES:
+  HaChiLoginModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HaChiLoginModule: 43d60162e9695df332580b5f71f18ff2fe7bf988
+
+PODFILE CHECKSUM: a0d4544a101f72bd230780d9c80eaf1fa7972f60
+
+COCOAPODS: 1.5.0
